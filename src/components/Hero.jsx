@@ -14,7 +14,7 @@ export default function Hero() {
         </div>
       </motion.div>
       <div className="w-48 h-48 md:w-64 md:h-64 relative">
-        <img src="/avatar.jpg" alt="Avatar" className="w-full h-full object-cover rounded-2xl border-2 border-slate-700 z-10 relative" />
+        <img src="/avatar.jpg.png" alt="Avatar" className="w-full h-full object-cover rounded-2xl border-2 border-slate-700 z-10 relative" />
       </div>
     </section>
   );
