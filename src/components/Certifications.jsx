@@ -13,7 +13,7 @@ export default function Certifications() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {certifications.map((cert, idx) => (
           <div key={idx} className="bg-slate-900/50 border border-slate-800/80 p-5 rounded-lg">
-            <span className="text-xs text-blue-500 font-semibold">{cert.date}</span>
+            <span className="text-xs text-olive-500 font-semibold">{cert.date}</span>
             <h3 className="font-bold text-slate-200 mt-1 mb-2 text-base">{cert.title}</h3>
             <p className="text-xs text-slate-400">{cert.issuer}</p>
           </div>
