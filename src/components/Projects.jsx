@@ -13,13 +13,15 @@ const projects = [
     title: "AI-First CRM HCP Module — AIVOA",
     desc: "Production CRM for pharmaceutical field reps with a LangGraph multi-agent architecture — 5 specialized AI tools for logging, editing, search, follow-up, and sentiment analysis, orchestrated by Groq LLM.",
     tech: ["React", "Redux", "FastAPI", "LangGraph", "Groq API", "SQLite"],
-    link: "https://github.com/Rosesharma13/aivoa-crm-hcp"
+    link: "https://github.com/Rosesharma13/aivoa-crm-hcp",
+    live: "https://aivoa-crm-hcp-alpha.vercel.app"
   },
   {
     title: "Vyrora AI — Multi-Agent Platform",
     desc: "Multi-agent AI platform built with a FastAPI backend and React frontend, deployed across Render and Vercel.",
     tech: ["Python", "FastAPI", "React", "Multi-Agent Systems"],
-    link: "https://github.com/Rosesharma13/vyrora-ai-agent-platform"
+    link: "https://github.com/Rosesharma13/vyrora-ai-agent-platform",
+    live: "https://vyrora-ai-agent-platform.vercel.app"
   },
   {
     title: "LLM Retail Assistant — RAG Pipeline",
@@ -32,7 +34,8 @@ const projects = [
     title: "LLM Data Pipeline",
     desc: "Modular ingestion pipeline processing PDF, text, and live URLs via direct LLM API calls with no LangChain dependency. Tenacity retry logic with exponential backoff — 94.4% chunk success rate.",
     tech: ["Python", "Groq API", "FastAPI", "BeautifulSoup", "Pandas", "Tenacity"],
-    link: "https://github.com/Rosesharma13/llm-data-pipeline"
+    link: "https://github.com/Rosesharma13/llm-data-pipeline",
+    live: "https://llm-data-pipeline.streamlit.app"
   }
 ];
 
@@ -44,17 +47,15 @@ export default function Projects() {
         {projects.map((proj, idx) => (
           <motion.div key={idx} whileHover={{ y: -4 }} className="bg-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col justify-between">
             <div>
-              <h3 className="text-xl font-bold text-blue-400 mb-2">{proj.title}</h3>
+              <h3 className="text-xl font-bold text-olive-400 mb-2">{proj.title}</h3>
               <p className="text-sm text-slate-400 mb-4">{proj.desc}</p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {proj.tech.map((t, i) => <span key={i} className="bg-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded-md">{t}</span>)}
               </div>
             </div>
             <div className="flex gap-4">
-              <a href={proj.link} target="_blank" rel="noreferrer" className="text-sm font-medium text-blue-400 hover:text-blue-300">View Code ↗</a>
-              {proj.live && (
-                <a href={proj.live} target="_blank" rel="noreferrer" className="text-sm font-medium text-slate-400 hover:text-slate-300">Live Demo ↗</a>
-              )}
+              <a href={proj.link} target="_blank" rel="noreferrer" className="text-sm font-medium text-olive-400 hover:text-olive-300">View Code ↗</a>
+              <a href={proj.live} target="_blank" rel="noreferrer" className="text-sm font-medium text-slate-400 hover:text-slate-300">Live Demo ↗</a>
             </div>
           </motion.div>
         ))}
