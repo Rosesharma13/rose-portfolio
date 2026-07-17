@@ -4,6 +4,7 @@ import StatusBar from './components/StatusBar';
 import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import AgentDemo from './components/AgentDemo';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import ChatBot from './components/ChatBot';
@@ -16,6 +17,7 @@ export default function App() {
       <Hero />
       <Experience />
       <Projects />
+      <AgentDemo />
       <Certifications />
       <Contact />
       <ChatBot />
