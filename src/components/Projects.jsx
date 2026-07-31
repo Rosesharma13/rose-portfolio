@@ -10,29 +10,36 @@ const projects = [
     live: "https://mira-health-app.streamlit.app"
   },
   {
-    title: "AI-First CRM HCP Module — AIVOA",
+    title: "Quelvox CRM — Multi-Agent HCP Module",
     desc: "Production CRM for pharmaceutical field reps with a LangGraph multi-agent architecture — 5 specialized AI tools for logging, editing, search, follow-up, and sentiment analysis, orchestrated by Groq LLM.",
     tech: ["React", "Redux", "FastAPI", "LangGraph", "Groq API", "SQLite"],
-    link: "https://github.com/Rosesharma13/aivoa-crm-hcp",
-    live: "https://aivoa-crm-hcp-alpha.vercel.app"
+    link: "https://github.com/Rosesharma13/Quelvox-CRM",
+    live: "https://quelvox-crm.vercel.app"
+  },
+  {
+    title: "AI Complaint Management System",
+    desc: "Multi-agent complaint intake pipeline for pharmaceutical manufacturing — LangGraph nodes handle completeness checking, risk classification, duplicate detection, root cause analysis, CAPA recommendation, and summarization.",
+    tech: ["React", "Redux", "FastAPI", "LangGraph", "Groq API", "PostgreSQL"],
+    link: "https://github.com/Rosesharma13/aivoa-complaint-management-system",
+    live: "https://aivoa-complaint-management-system.vercel.app"
   },
   {
     title: "Vyrora AI — Multi-Agent Platform",
-    desc: "Multi-agent AI platform built with a FastAPI backend and React frontend, deployed across Render and Vercel.",
-    tech: ["Python", "FastAPI", "React", "Multi-Agent Systems"],
+    desc: "Multi-agent AI platform with four specialized agents — Research, Document, Planning, and Presentation — built with a FastAPI backend and React frontend, deployed across Render and Vercel.",
+    tech: ["Python", "FastAPI", "React", "LangGraph", "Groq API"],
     link: "https://github.com/Rosesharma13/vyrora-ai-agent-platform",
     live: "https://vyrora-ai-agent-platform.vercel.app"
   },
   {
     title: "LLM Retail Assistant — RAG Pipeline",
-    desc: "Production RAG pipeline for natural language product queries, sub-2s latency across 500+ interactions. LangChain memory chains with Groq API for multi-turn conversations.",
+    desc: "RAG pipeline for natural language product queries over a retail catalog, using LangChain memory chains with Groq API for multi-turn conversations.",
     tech: ["LangChain", "Groq API", "Hugging Face", "RAG", "Streamlit"],
     link: "https://github.com/Rosesharma13/LLM-retail-assistant",
     live: "https://llm-retail-assistant.streamlit.app"
   },
   {
     title: "LLM Data Pipeline",
-    desc: "Modular ingestion pipeline processing PDF, text, and live URLs via direct LLM API calls with no LangChain dependency. Tenacity retry logic with exponential backoff — 94.4% chunk success rate.",
+    desc: "Modular ingestion pipeline processing PDF, text, and live URLs via direct LLM API calls with no LangChain dependency, using Tenacity retry logic with exponential backoff.",
     tech: ["Python", "Groq API", "FastAPI", "BeautifulSoup", "Pandas", "Tenacity"],
     link: "https://github.com/Rosesharma13/llm-data-pipeline",
     live: "https://llm-data-pipeline.streamlit.app"
