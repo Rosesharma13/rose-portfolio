@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import TiltCard from './TiltCard';
 
 const projects = [
   {
@@ -65,9 +66,8 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: idx * 0.06 }}
-            whileHover={{ y: -3 }}
-            className="bg-white border border-paper-300 hover:border-olive-400 p-6 rounded-lg flex flex-col justify-between transition-colors shadow-sm"
           >
+          <TiltCard className="bg-white border border-paper-300 hover:border-olive-400 p-6 rounded-lg flex flex-col justify-between transition-colors shadow-sm h-full">
             <div>
               <h3 className="text-lg font-semibold text-ink-900 mb-2">{proj.title}</h3>
               <p className="text-sm text-ink-500 mb-4 leading-relaxed">{proj.desc}</p>
@@ -81,6 +81,7 @@ export default function Projects() {
               <a href={proj.link} target="_blank" rel="noreferrer" className="text-ink-700 hover:text-olive-600 transition-colors">Code ↗</a>
               <a href={proj.live} target="_blank" rel="noreferrer" className="text-ink-500 hover:text-olive-600 transition-colors">Live ↗</a>
             </div>
+          </TiltCard>
           </motion.div>
         ))}
       </div>
