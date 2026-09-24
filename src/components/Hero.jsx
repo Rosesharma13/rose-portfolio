@@ -16,7 +16,10 @@ export default function Hero() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="flex-1 space-y-6 text-center md:text-left"
       >
-        <span className="font-mono text-xs tracking-[0.2em] text-olive-600 uppercase">AI / ML Engineer</span>
+        <div>
+          <span className="font-display text-2xl text-ink-900 block mb-2">Rose Sharma</span>
+          <span className="font-mono text-xs tracking-[0.2em] text-olive-600 uppercase">AI / ML Engineer</span>
+        </div>
         <h1 className="font-display text-5xl md:text-6xl text-ink-900 leading-[1.08]">
           I build multi-agent AI systems<br className="hidden md:block" /> that <em className="text-olive-600 not-italic font-medium">actually run in production.</em>
         </h1>
