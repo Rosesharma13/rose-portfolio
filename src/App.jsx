@@ -4,6 +4,7 @@ import NetworkBackground from './components/NetworkBackground';
 import ScrollProgress from './components/ScrollProgress';
 import StatusBar from './components/StatusBar';
 import Hero from './components/Hero';
+import Education from './components/Education';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import AgentDemo from './components/AgentDemo';
@@ -19,6 +20,7 @@ export default function App() {
       <ScrollProgress />
       <StatusBar />
       <Hero />
+      <Education />
       <Experience />
       <Projects />
       <AgentDemo />
