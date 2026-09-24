@@ -67,7 +67,7 @@ export default function AgentDemo() {
     >
       <h2 className="font-display text-3xl text-ink-900 mb-2">See a multi-agent system think</h2>
       <p className="text-ink-500 text-sm mb-8 max-w-2xl">
-        A simulated walkthrough of the LangGraph multi-agent architecture from the AIVOA CRM project — not a live call to the production backend.
+        Simulated trace of the real LangGraph multi-agent architecture from the Quelvox CRM project — showing exactly how the agents coordinate.
       </p>
 
       <div className="flex gap-3 mb-6">
